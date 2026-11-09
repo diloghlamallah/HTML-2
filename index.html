@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Restaurant website" />
+    <title>Luna Rossa</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="flex flex-row justify-between items-center py-4 px-4 fixed top-0 left-0 right-0 bg-transparent backdrop-blur-md z-50 text-white text-lg font-semibold header shadow-md"
+    >
+      <div class="basis-64">
+        <h3>Luna <samp class="text-amber-500">Rossa</samp></h3>
+      </div>
+      <div class="basis-128">
+        <nav>
+          <ul class="flex flex-row space-x-4 justify-center items-center gap-8">
+            <li
+              class="transition duration-300 ease-in-out hover:text-amber-400 group py-2"
+            >
+              <a href="#Home"> Home </a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out hover:text-amber-400 group py-2"
+            >
+              <a href="#Menu"> Menu</a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out hover:text-amber-400 group py-2"
+            >
+              <a href="#About">About</a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out hover:text-amber-400 group py-2"
+            >
+              <a href="#Testimonials">Testimonials</a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out hover:text-amber-400 group py-2"
+            >
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="basis-64">
+        <nav>
+          <ul class="flex flex-row space-x-4 justify-center items-center gap-8">
+            <li><a href="#Login">Login</a></li>
+            <li
+              class="text-amber-500 transition duration-300 ease-in-out hover:text-amber-700 group py-2"
+            >
+              <a href="#orders">orders</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        id="Home"
+        class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-white text-center gap-20"
+      >
+        <h1 class="text-7xl font-bold">
+          Experience the Art of
+          <span class="text-amber-500">Italian Dining</span>
+        </h1>
+        <p class="text-2xl font-light max-w-2xl">
+          A symphony of authentic flavors and elegant ambiance, crafted just for
+          you
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6">
+          <button
+            class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-3xl"
+          >
+            Explore Menu
+          </button>
+          <button
+            class="bg-transparent hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-3xl border border-amber-500"
+          >
+            Book a Table
+          </button>
+        </div>
+      </section>
+      <section id="Menu" class="py-24 bg-[#0d0d0d] text-white h-screen">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              style="font-family: &quot;Playfair Display&quot;, serif"
+              class="text-3xl md:text-5xl font-bold mb-4"
+            >
+              Our Specialities
+            </h2>
+            <p
+              class="text-gray-400 max-w-md mx-auto font-light text-sm md:text-base"
+            >
+              Handcrafted Italian dishes made with fresh ingredients and
+              traditional recipes.
+            </p>
+            <div class="w-16 h-[2px] bg-amber-500 mx-auto mt-4"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div
+              class="group bg-[#141414] border border-white/5 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/30 hover:shadow-amber-500/5"
+            >
+              <div class="overflow-hidden h-60 relative">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwj_ZDnyayLgDY14Pqcg59YcxWjph6Fmo92_RnAJbDew&s=10"
+                  alt="Truffle Pasta"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <span
+                  class="absolute top-4 right-4 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full"
+                >
+                  Popular
+                </span>
+              </div>
+              <div class="p-8 space-y-6">
+                <div class="flex justify-between items-center">
+                  <h3
+                    style="font-family: &quot;Playfair Display&quot;, serif"
+                    class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors duration-300"
+                  >
+                    Truffle Pasta
+                  </h3>
+                  <span class="text-amber-500 font-bold text-lg">$24.00</span>
+                </div>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                  Fresh homemade fettuccine served with rich creamy black
+                  truffle sauce and shaved parmesan.
+                </p>
+                <button
+                  class="w-full border border-amber-500/20 hover:bg-amber-500 hover:text-black text-amber-500 font-medium py-2.5 rounded-xl transition duration-300 text-sm"
+                >
+                  Add to Order
+                </button>
+              </div>
+            </div>
+            <div
+              class="group bg-[#141414] border border-white/5 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/30 hover:shadow-amber-500/5"
+            >
+              <div class="overflow-hidden h-60 relative">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZMozOIhdGdBigoUTN38-js69pn8KLOoPO4QCJ1Kmnw&s=10"
+                  alt="Margherita Pizza"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 space-y-6">
+                <div class="flex justify-between items-center">
+                  <h3
+                    style="font-family: &quot;Playfair Display&quot;, serif"
+                    class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors duration-300"
+                  >
+                    Margherita Pizza
+                  </h3>
+                  <span class="text-amber-500 font-bold text-lg">$18.50</span>
+                </div>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                  San Marzano tomatoes, fresh mozzarella, organic basil, and a
+                  drizzle of extra virgin olive oil.
+                </p>
+                <button
+                  class="w-full border border-amber-500/20 hover:bg-amber-500 hover:text-black text-amber-500 font-medium py-2.5 rounded-xl transition duration-300 text-sm"
+                >
+                  Add to Order
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="group bg-[#141414] border border-white/5 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/30 hover:shadow-amber-500/5"
+            >
+              <div class="overflow-hidden h-60 relative">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5snIT2vUpyNVpsHFOLuxCRmhs8FTYn0AssnsXPmNZIA&s"
+                  alt="Classic Tiramisu"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 space-y-6">
+                <div class="flex justify-between items-center">
+                  <h3
+                    style="font-family: &quot;Playfair Display&quot;, serif"
+                    class="text-xl font-bold text-white group-hover:text-amber-500 transition-colors duration-300"
+                  >
+                    Classic Tiramisu
+                  </h3>
+                  <span class="text-amber-500 font-bold text-lg">$12.00</span>
+                </div>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">
+                  Layers of espresso-soaked ladyfingers and creamy mascarpone,
+                  dusted with premium cocoa powder.
+                </p>
+                <button
+                  class="w-full border border-amber-500/20 hover:bg-amber-500 hover:text-black text-amber-500 font-medium py-2.5 rounded-xl transition duration-300 text-sm"
+                >
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about"></section>
+      <section id="testimonials"></section>
+      <section id="contact us"></section>
+    </main>
+    <footer class="bg-[#080808] text-white pt-16 pb-8 border-t border-white/5">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+      >
+        <div class="space-y-4">
+          <div
+            style="font-family: &quot;Playfair Display&quot;, serif"
+            class="text-2xl font-bold tracking-wide"
+          >
+            Luna <span class="text-amber-500">Rossa</span>
+          </div>
+          <p class="text-gray-400 text-sm font-light leading-relaxed">
+            Experience the true essence of Italian culinary art in a
+            sophisticated and warm atmosphere.
+          </p>
+
+          <div class="flex space-x-4 pt-2">
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-content-center text-gray-400 hover:bg-amber-500 hover:text-black transition duration-300 text-sm"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-content-center text-gray-400 hover:bg-amber-500 hover:text-black transition duration-300 text-sm"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-content-center text-gray-400 hover:bg-amber-500 hover:text-black transition duration-300 text-sm"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4
+            style="font-family: &quot;Playfair Display&quot;, serif"
+            class="text-lg font-semibold text-amber-500"
+          >
+            Quick Links
+          </h4>
+          <ul class="space-y-2 text-sm text-gray-400 font-light">
+            <li>
+              <a href="#home" class="hover:text-white transition duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#menu" class="hover:text-white transition duration-200"
+                >Our Menu</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-white transition duration-200"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#booking"
+                class="hover:text-white transition duration-200"
+                >Book A Table</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4
+            style="font-family: &quot;Playfair Display&quot;, serif"
+            class="text-lg font-semibold text-amber-500"
+          >
+            Opening Hours
+          </h4>
+          <ul class="space-y-2 text-sm text-gray-400 font-light">
+            <li class="flex justify-between">
+              <span>Monday - Friday</span>
+              <span class="text-white font-medium">12:00 - 23:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Saturday</span>
+              <span class="text-white font-medium">13:00 - 00:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Sunday</span>
+              <span class="text-amber-500 font-medium">Closed</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4
+            style="font-family: &quot;Playfair Display&quot;, serif"
+            class="text-lg font-semibold text-amber-500"
+          >
+            Contact Info
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-400 font-light">
+            <li class="flex items-start space-x-3">
+              <i class="fas fa-map-marker-alt text-amber-500 mt-1"></i>
+              <span>123 Luxury Dining St, Algiers, Algeria</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-phone-alt text-amber-500"></i>
+              <span>+213 555 12 34 56</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-amber-500"></i>
+              <span>contact@lunarossa.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 text-center text-xs text-gray-500 font-light"
+      >
+        <p>
+          &copy; 2026 Luna Rossa. All rights reserved. Designed with passion.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
